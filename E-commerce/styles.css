@@ -1,0 +1,563 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans' sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    background: steelblue;
+}
+
+/* creating font-face */
+
+@font-face{
+    font-family: 'futara';
+    src: url('Futura-1/Futura/FuturaPTMedium.otf');
+}
+
+header{
+    margin-bottom: 7px;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background: red;
+}
+
+.logo{
+    width: 10%;
+    height: 60px;
+    color: aqua;
+    display: grid;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-shadow: 4px 3px 3px #333;
+}
+
+.navigation{
+    width: 30%;
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+    width: 30%;
+    height: 60px;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    text-shadow: 0px 3px 1px #333;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: orange;
+    transition-delay: 30ms ease;
+}
+
+.icons{
+    width: 20%;
+    height: 60px;
+    display: flex;
+}
+
+#icons{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons li{
+    color: #fff;
+    text-shadow: 6px 2px 3px #333;
+    margin-right: 20px;
+}
+
+.sidebar{
+    width: 40%;
+    margin-bottom: 0px;
+    background-color: #333;
+}
+
+.sidebar .open{
+    width: 40px;
+    color: #fff;
+    
+}
+
+.sidebar .open ul{
+    display: grid;
+    justify-content: center;
+    
+}
+
+/* banner css */
+.banner{
+    width: 100%;
+    height: 400PX;
+    background-color: grey;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url('background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.item{
+    text-align: center;
+    margin-top: 50px;
+    height: fit-content;
+    margin: 20px;
+    width: calc(35.0%);
+
+}
+
+h3{
+    color: aqua;
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 2px 2px 0px #444;
+}
+
+h2{
+    color: aqua;
+}
+
+.owner{
+    display: grid;
+}
+
+.dir{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dir img{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    transition: 3s ease;
+}
+
+.dir img:hover{
+    transform: scale(2.2);
+}
+
+
+.dir h4{
+    color: orange;
+    font-size: x-large;
+    font-style: italic;
+   
+}
+
+h5{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    transition: 2s ease;
+}
+
+h5:hover{
+    color: orange;
+    transform: scale(2.2);
+}
+
+.item2 img{
+    height: 40vh;
+    width: 100%;
+    background: transparent;
+}
+.item1{
+    overflow: hidden;
+    align-items: center;
+    margin-left: 20px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    border: none;
+ 
+}
+
+.btn{
+    margin-top: 2vh;
+    color: #fff;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    background: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 3px 6px 2px #333;
+}
+
+.btn:hover{
+    color: black;
+    background: #666;
+}
+
+/* feature section css */
+.featured{
+    height: 400;
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.featured-box-1{
+    overflow: hidden;
+    width: 33%;
+    height: 500px;
+    position: relative;
+    background-color: green;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: yellow;
+    /* position: absolute; */
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.featured-box-1:hover img{
+    transform: scale(1.2);
+}
+
+.overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+display: flex;
+padding: 10%;
+align-items: flex-end;
+justify-content: center;
+}
+
+.overlay .btn{
+    z-index: 20;
+}
+
+.featured-box-2{
+    width: 33%;
+    height: 250px;
+    position: relative;
+    background-color: purple;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: yellow;
+    /* position: absolute; */
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.featured-box-2:hover img{
+    transform: scale(1.2);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    padding: 10%;
+    align-items: flex-end;
+    justify-content: center;
+    }
+    
+    .overlay .btn{
+        z-index: 20;
+    }
+
+.featured-box-2 .featured-box-2-2{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+} 
+
+.featured-box-2-2-box-1{
+    width: 49.5%;
+    height: 100%;
+    position: relative;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: yellow;
+    /* position: absolute; */
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.featured-box-2-2:hover img{
+    transform: scale(1.2);
+}
+
+.overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+display: flex;
+padding: 10%;
+align-items: flex-end;
+justify-content: center;
+}
+
+.overlay .btn{
+    z-index: 10;
+}
+
+.featured-box-2-2-box-2{
+    width: 49.5%;
+    height: 100%;
+    position: relative;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: yellow;
+    /* position: absolute; */
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.featured-box-2-2:hover img{
+    transform: scale(1.2);
+}
+
+.overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+display: flex;
+padding: 10%;
+align-items: flex-end;
+justify-content: center;
+}
+
+.overlay .btn{
+    z-index: 10;
+}
+
+.featured-box-3{
+    overflow: hidden;
+    width: 33%;
+    height: 500px;
+    position: relative;
+    background-color: green;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: yellow;
+    /* position: absolute; */
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.featured-box-3:hover img{
+    transform: scale(1.2);
+}
+
+.overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+display: flex;
+padding: 10%;
+align-items: flex-end;
+justify-content: center;
+}
+
+.overlay .btn{
+    z-index: 20;
+}
+
+.product-section{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-color: bisque;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.product {
+    margin-top: 20px;
+    display: grid;
+    justify-content: space-around;
+    width: 22.0%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    border: none;
+    position: relative;
+    padding: 2px;
+    border-radius: 20px;
+    flex: 1; /* Let flexbox distribute space evenly */
+}
+
+
+.product img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 1.5s;
+    display: flex;
+    box-shadow: 2px 1px 3px #444;
+    justify-content: space-between;
+}
+
+.product img:hover{
+    transform: scale(1.2);
+}
+
+.product .details{
+    margin-top: 4px;
+    color: aqua;
+    text-shadow: 2px 2px 0px #333;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    background: #696565;
+}
+
+.product-2{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: bisque;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.product {
+    justify-content: space-around;
+    width: 22.0%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    border: none;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    flex: 1; /* Let flexbox distribute space evenly */
+}
+
+
+.product-2 .product img{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 1.5s;
+    display: flex;
+    box-shadow: 2px 4px 3px #444;
+    justify-content: space-between;
+}
+
+.product img:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+hr{
+    color: aqua;
+    align-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    
+}
+
+li{
+    color: #fff;
+    list-style: none;
+    margin-right: 10px;
+}
+
+li:hover{
+    color: orange;
+    transition: 20ms ease;
+}
+
+h4{
+    color: #fff;
+    background: #605d5d;
+    text-align: center;
+}
